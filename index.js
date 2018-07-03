@@ -22,4 +22,4 @@ client.on('message', (message) => {
     client.user.setActivity(`--help || Servers: ${client.guilds.size}`)
   });
 
-client.login("NDYzNjgzNDE3NjUzOTAzMzcw.Dhz-XA.Zo6I56DRs0cpI7JUgiHH8ZyoWFE");
+client.login("NDYzNjE1NzYwMjAwMjM3MDU4.DhzP2w.m2JujSvnpdx4PR01xQsdSX8MX8k")
