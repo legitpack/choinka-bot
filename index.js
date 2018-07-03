@@ -12,14 +12,14 @@ client.on('message', (message) => {
     }
 });
 
-client.on("guildCreate", guild => {
-  console.log(`Dołączono do: ${guild.name} (id: ${guild.id}). Serwer posiada ${guild.memberCount} czlonkow!`);
-  client.user.setActivity(`--help || Servers: ${client.guilds.size}`);
-});
+  client.on("guildCreate", guild => {
+    console.log(`Dołączono do: ${guild.name} (id: ${guild.id}). Serwer posiada ${guild.memberCount} czlonkow!`);
+    client.user.setActivity(`--help || Servers: ${client.guilds.size}`);
+  });
   
-client.on("guildDelete", guild => {
-  console.log(`Wyrzucono mnie z: ${guild.name} (id: ${guild.id})`);
-  client.user.setActivity(`--help || Servers: ${client.guilds.size}`)
-});
+  client.on("guildDelete", guild => {
+    console.log(`Wyrzucono mnie z: ${guild.name} (id: ${guild.id})`);
+    client.user.setActivity(`--help || Servers: ${client.guilds.size}`)
+  });
 
 client.login("NDYzNjgzNDE3NjUzOTAzMzcw.Dhz-XA.Zo6I56DRs0cpI7JUgiHH8ZyoWFE");
